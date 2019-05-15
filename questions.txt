@@ -1,0 +1,142 @@
+Q 8 - If a bean is created once per Ioc Container, scope is
+
+A - singleton
+
+B - global-session
+
+C - prototype
+
+D - request
+
+Answer : A
+Explanation
+If a bean is created once per Ioc Container, scope is singleton.
+
+------------------------------------------------------
+
+Q 9 - How bean life cycle can be controlled?
+
+A - Using init() only
+
+B - Using InitializingBean class only
+
+C - Using DisposableBean class only
+
+D - Using All of above
+
+Answer : D
+Explanation
+Life cycle of a bean can be controlled using init() method or using InitializingBean / DisposableBean classes.
+
+---------------------------------
+Q 10 - What BeanPostProcessor does?
+
+A - It processes beans once a bean is initialized.
+
+B - It defines callback methods that you can implement to provide your own instantiation logic, dependency-resolution logic etc.
+
+C - It processes beans once a bean is loaded.
+
+D - It processes beans once a bean exits.
+
+Answer : B
+Explanation
+BeanPostProcessor defines callback methods that you can implement to provide your own instantiation logic, dependency-resolution logic etc.
+-----------------------------
+Q 2 - Which of the following stands true for spring beans?
+
+A - Spring beans are managed by the Spring IoC container.
+
+B - Spring beans are instantiated, assembled, and otherwise managed by a Spring IoC container.
+
+C - Spring beans are simple POJOs.
+
+D - All of the above.
+
+Answer : D
+Explanation
+All of the above statements are correct.
+----------------------------------------------
+Q 8 - Thread scoped bean is introduced in which version of spring framework.
+
+A - 1.0
+
+B - 2.0
+
+C - 3.0
+
+D - 4.0
+
+Answer : C
+Explanation
+Thread scoped bean is introduced in 3.0 version of spring framework.
+--------------------------------------------
+Q 9 - How to handle shut down of IoC container?
+
+A - Using shutdownHook()
+
+B - Using shutdownHandler()
+
+C - Using registerHook()
+
+D - Using registerShutdownHook()
+
+Answer : D
+Explanation
+Using registerShutdownHook() method, shut down of IoC container can be handled. Other methods do not exists.
+-----------------------
+1.	What is the scope of statefull bean in spring?
+a.	Singleton scope
+ b.	Prototype scope
+Correct Answer : b.	Prototype scope
+------------------------------
+
+2.	In which spring scope is a single bean instance created per IoC container?
+	a.	Singleton scope
+b.	Request scope
+Correct Answer: a.	Singleton scope
+-------------------------------------------------
+3.	In which spring scope can any number of instances of bean be created?
+ a.	Request scope
+ b.	Prototype scope
+Correct Answer: b.	Prototype scope
+-----------------------------------
+
+4.	When a bean has scope limited to only HTTP request, that is called
+ a.	Request scope
+ b.	Session scope
+Correct Answer: a.	Request scope
+------------------
+5.	When a bean has scope limited to HTTP session, that is called
+a.	Request scope
+b.	Session scope
+Correct Answer: b.	Session scope
+-----------------
+6.	Thread scope bean has been introduced in spring from the version
+a.	Spring 2.5
+b.	Spring 3.0
+Correct Answer: b.	Spring 3.0
+---------------
+7.	Which bean scope is used in portlet context in spring?
+ a.	Session scope
+ b.	Global session scope
+Correct Answer: b.	Global session scope
+
+----------------------
+8.	InitializingBean and DisposableBean is used to customize the nature of bean in spring.
+ a.	Yes
+b.	No
+Correct Answer: a.	Yes
+---------------------------
+9.	How to control a bean lifecycle in spring?
+a.	Using init() method only.
+ b.	Using InitializingBean and DisposableBean or init() method.
+CorrectAnswer: b.	Using InitializingBean and DisposableBean or init() method.
+-------------------------------
+10.	How to shutdown the Spring IoC container gracefully in non-web applications?
+ a.	Using shutdownNow()
+ b.	registerShutdownHook()
+Correct Answer: b.	registerShutdownHook()
+-------------------
+
+
